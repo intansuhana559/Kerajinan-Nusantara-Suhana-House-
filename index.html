@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KerajinanNusantara</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        Kerajinan<span>Nusantara</span>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#produk">Katalog</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Warisan Budaya dalam Setiap Karya</h1>
+        <p>
+            Temukan koleksi kerajinan tangan terbaik Indonesia:
+            Anyaman, Batik, dan Ukiran berkualitas premium.
+        </p>
+
+        <a href="#produk" class="btn">
+            Lihat Produk
+        </a>
+    </div>
+</section>
+
+<!-- KATALOG -->
+<section class="products" id="produk">
+
+    <h2>Katalog Produk</h2>
+
+    <div class="product-grid">
+
+        <!-- Produk 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?w=600"
+            alt="Anyaman">
+
+            <h3>Anyaman Rotan Premium</h3>
+
+            <p class="price">Rp250.000</p>
+
+            <button onclick="showDetail(
+            'Anyaman Rotan Premium',
+            'Kerajinan anyaman rotan handmade khas Indonesia.',
+            'Diameter 40 cm',
+            'Rotan alami',
+            '250000'
+            )">
+                Detail Produk
+            </button>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600"
+            alt="Batik">
+
+            <h3>Kain Batik Tulis</h3>
+
+            <p class="price">Rp450.000</p>
+
+            <button onclick="showDetail(
+            'Kain Batik Tulis',
+            'Batik tulis motif klasik nusantara.',
+            '2.5 x 1.2 meter',
+            'Katun Premium',
+            '450000'
+            )">
+                Detail Produk
+            </button>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600"
+            alt="Ukiran">
+
+            <h3>Ukiran Kayu Jepara</h3>
+
+            <p class="price">Rp850.000</p>
+
+            <button onclick="showDetail(
+            'Ukiran Kayu Jepara',
+            'Ukiran khas Jepara dengan detail artistik.',
+            '50 x 30 cm',
+            'Kayu Jati',
+            '850000'
+            )">
+                Detail Produk
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- MODAL DETAIL -->
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2 id="productName"></h2>
+
+        <p id="productDesc"></p>
+
+        <p><strong>Ukuran:</strong> <span id="productSize"></span></p>
+
+        <p><strong>Bahan:</strong> <span id="productMaterial"></span></p>
+
+        <p><strong>Harga:</strong> Rp<span id="productPrice"></span></p>
+
+        <a id="waButton"
+           target="_blank"
+           class="wa-btn">
+           Pesan via WhatsApp
+        </a>
+
+    </div>
+</div>
+
+<!-- TENTANG -->
+<section class="about" id="tentang">
+
+    <h2>Tentang Kami</h2>
+
+    <p>
+        KerajinanNusantara hadir untuk membantu UMKM dan pengrajin lokal
+        memasarkan karya terbaik Indonesia ke seluruh nusantara.
+    </p>
+
+</section>
+
+<!-- KONTAK -->
+<section class="contact" id="kontak">
+
+    <h2>Hubungi Kami</h2>
+
+    <p>Email: info@kerajinannusantara.com</p>
+
+    <p>WhatsApp: +62 852-1999-5541</p>
+
+    <p>Alamat: Palembang, Sumatera Selatan</p>
+
+</section>
+
+<footer>
+    <p>© 2026 KerajinanNusantara. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
